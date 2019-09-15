@@ -20,8 +20,7 @@ class PigLatinizer
    if self.is_vowel?(word)
      word.concat('way')
    else
-      new_word = word.concat(word.slice!(/^[^aeiouAEIOU]*/i || "")) + 'ay'
-    end
-    new_word
-  end
+     word.concat(word.slice!(/^[^aeiouAEIOU]*/i || "")) + 'ay'
+   end
+ end
 end
