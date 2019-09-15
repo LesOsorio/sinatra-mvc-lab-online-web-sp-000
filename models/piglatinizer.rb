@@ -9,7 +9,7 @@ class PigLatinizer
     unusable = ["i", "a", "an", "in", "on", "and"]
     word.gsub!(/[^a-z0-9\s]/i, '')
     word = word.split("")
-    # ["k", "i", "t", "t", "e", "n"]
+    
 
     if unusable.include?(word.join) || word.size <= 1
       word.join
