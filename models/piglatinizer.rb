@@ -16,12 +16,10 @@ class PigLatinizer
     vowels.include?(word[0])
   end
 
-  def piglatinize_word(word)
-    vowels = 'aeiouAEIOU'
-    new_word = ""
-    if vowels.include?(word[0])
-      new_word = word.concat('way')
-    else
+  def piglatinize(word)
+   if self.is_vowel?(word)
+     word.concat('way')
+   else
       new_word = word.concat(word.slice!(/^[^aeiouAEIOU]*/i || "")) + 'ay'
     end
     new_word
