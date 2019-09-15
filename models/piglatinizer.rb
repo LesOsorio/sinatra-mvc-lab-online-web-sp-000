@@ -7,8 +7,8 @@ class PigLatinizer
     @phrase = phrase
   end
 
-  def piglatinize(sentence)
-      sentence.split(" ").collect! {|word| piglatinize_word(word)}.join(' ')
+  def to_pig_latin(phrase)
+    phrase.split.collect {|word| piglatinize(word)}.join(' ')
   end
 
   def is_vowel?(word)
