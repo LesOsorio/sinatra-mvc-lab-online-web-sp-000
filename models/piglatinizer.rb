@@ -4,7 +4,7 @@ class PigLatinizer
   attr_accessor :word
 
   def initalize(phrase=nil)
-    @phrase = phrase
+    @phrase = phrase 
   end
 
   def piglatinize(sentence)
