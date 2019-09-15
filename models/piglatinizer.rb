@@ -4,7 +4,7 @@ class PigLatinizer
   attr_accessor :word
 
   def initalize(phrase=nil)
-    @phrase = phrase 
+    @phrase = phrase
   end
 
   def piglatinize(sentence)
@@ -13,7 +13,7 @@ class PigLatinizer
 
   def is_vowel?(word)
     vowels = 'aeiouAEIOU'
-    vowels.include?(word[0])
+   vowels.include?(word[0])
   end
 
   def piglatinize_word(word)
